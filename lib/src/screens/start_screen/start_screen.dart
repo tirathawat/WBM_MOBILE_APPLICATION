@@ -1,3 +1,5 @@
+import 'package:WBM_platform/src/config/size_config.dart';
+import 'package:WBM_platform/src/screens/start_screen/components/body.dart';
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatelessWidget {
@@ -6,13 +8,9 @@ class StartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Scaffold(
-      appBar: buildAppBar(),
-      body: buildBody(),
+      body: Body(),
     );
   }
-
-  AppBar buildAppBar() => AppBar();
-
-  buildBody() => Container();
 }

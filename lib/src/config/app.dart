@@ -1,7 +1,8 @@
-import 'package:WBM_platform/src/app_config/constants.dart';
-import 'package:WBM_platform/src/app_config/routes.dart';
-import 'package:WBM_platform/src/screens/start_screen.dart';
+import 'package:WBM_platform/src/config/routes.dart';
+import 'package:WBM_platform/src/screens/start_screen/start_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'constants.dart';
 
 class App extends StatelessWidget {
   @override
@@ -9,27 +10,27 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'WBM_platform',
-      theme: buildThemeData(),
+      theme: _buildThemeData(),
       initialRoute: StartScreen.routeName,
       routes: routes,
     );
   }
 
-  ThemeData buildThemeData() {
+  ThemeData _buildThemeData() {
     return ThemeData(
       fontFamily: "Poppins",
-      appBarTheme: buildAppBarTheme(),
-      textTheme: buildTextTheme(),
+      appBarTheme: _buildAppBarTheme(),
+      textTheme: _buildTextTheme(),
       scaffoldBackgroundColor: Colors.white,
       primarySwatch: Colors.blue,
       visualDensity: VisualDensity.adaptivePlatformDensity,
-      inputDecorationTheme: buildInputDecorationTheme(),
+      inputDecorationTheme: _buildInputDecorationTheme(),
     );
   }
 
-  InputDecorationTheme buildInputDecorationTheme() {
+  InputDecorationTheme _buildInputDecorationTheme() {
     var outlineInputBorder = OutlineInputBorder(
-      borderRadius: BorderRadius.circular(28),
+      borderRadius: BorderRadius.circular(15),
       borderSide: BorderSide(
         color: kTextColor,
       ),
@@ -46,12 +47,12 @@ class App extends StatelessWidget {
     );
   }
 
-  TextTheme buildTextTheme() => TextTheme(
+  TextTheme _buildTextTheme() => TextTheme(
         bodyText1: TextStyle(color: kTextColor),
         bodyText2: TextStyle(color: kTextColor),
       );
 
-  AppBarTheme buildAppBarTheme() => AppBarTheme(
+  AppBarTheme _buildAppBarTheme() => AppBarTheme(
         color: Colors.white,
         elevation: 0,
         brightness: Brightness.light,
@@ -60,7 +61,7 @@ class App extends StatelessWidget {
         ),
         textTheme: TextTheme(
           headline6: TextStyle(
-            color: Color(0xFF8B8B8B),
+            color: Colors.black,
             fontSize: 18,
           ),
         ),

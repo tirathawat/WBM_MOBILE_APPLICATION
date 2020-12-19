@@ -1,4 +1,4 @@
-import 'package:WBM_platform/src/app_config/app.dart';
+import 'package:WBM_platform/src/config/app.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
