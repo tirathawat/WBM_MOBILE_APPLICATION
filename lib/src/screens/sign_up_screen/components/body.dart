@@ -1,8 +1,9 @@
 import 'package:WBM_platform/src/config/constants.dart';
 import 'package:WBM_platform/src/config/size_config.dart';
-import 'package:WBM_platform/src/screens/sign_in_screen/components/sign_in_form.dart';
-import 'package:WBM_platform/src/screens/sign_in_screen/components/no_account_text.dart';
+import 'package:WBM_platform/src/screens/sign_up_screen/components/sign_up_form.dart';
 import 'package:flutter/material.dart';
+
+import 'have_account_text.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -14,24 +15,24 @@ class Body extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: SizeConfig.screenHeight * 0.08,
+                height: SizeConfig.screenHeight * 0.04,
               ),
               Text(
-                "Welcome Back",
+                "Register",
                 style: headingStyle,
               ),
               Text(
-                "Sign in with your email and password",
+                "Sign up with your email and password",
                 textAlign: TextAlign.center,
               ),
               SizedBox(
                 height: SizeConfig.screenHeight * 0.08,
               ),
-              SignInForm(),
+              SignUpForm(),
               SizedBox(
                 height: SizeConfig.screenHeight * 0.08,
               ),
-              NoAccoutText(),
+              HaveAccoutText(),
             ],
           ),
         ),

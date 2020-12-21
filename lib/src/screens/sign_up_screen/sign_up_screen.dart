@@ -1,3 +1,4 @@
+import 'package:WBM_platform/src/screens/sign_up_screen/components/body.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -6,8 +7,13 @@ class SignUpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      appBar: _buildAppBar(),
+      body: Body(),
     );
   }
+
+  AppBar _buildAppBar() => AppBar(
+    title: Text("Sign up"),
+  );
 }

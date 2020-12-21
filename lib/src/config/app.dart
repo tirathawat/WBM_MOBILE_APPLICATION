@@ -1,17 +1,20 @@
 import 'package:WBM_platform/src/config/routes.dart';
+import 'package:WBM_platform/src/screens/home_screen/home_screen.dart';
 import 'package:WBM_platform/src/screens/start_screen/start_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import 'constants.dart';
 
 class App extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'WBM_platform',
       theme: _buildThemeData(),
-      initialRoute: StartScreen.routeName,
+      initialRoute: FirebaseAuth.instance.currentUser == null ? StartScreen.routeName : HomeScreen.routeName,
       routes: routes,
     );
   }

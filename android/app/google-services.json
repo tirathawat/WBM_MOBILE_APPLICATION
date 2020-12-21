@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "442058706599",
+    "firebase_url": "https://wb-measure-platform.firebaseio.com",
+    "project_id": "wb-measure-platform",
+    "storage_bucket": "wb-measure-platform.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442058706599:android:e4f234b6e3e28771855582",
+        "android_client_info": {
+          "package_name": "com.example.WBM_platform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442058706599-2gbecqck5hadjr0hcr0dutott3kgiv79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbj--P3zfHLq1a7bVQoU2SQzYzO-5-oLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442058706599-2gbecqck5hadjr0hcr0dutott3kgiv79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

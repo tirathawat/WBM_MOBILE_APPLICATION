@@ -20,9 +20,9 @@ const String kInvalidEmailError = "Please Enter Valid Email";
 const String kPassNullError = "Please Enter your password";
 const String kShortPassError = "Password is too short";
 const String kMatchPassError = "Passwords don't match";
+const String kConfirmPassNullError = "Please Confirm your password";
 const String kNameNullError = "Please Enter your name";
 const String kPhoneNumberNullError = "Please Enter your phone number";
-const String kAddressNullError = "Please Enter your address";
 
 const String kERROR_WRONG_PASSWORD = "Wrong Password! Try again";
 const String kERROR_INVALID_EMAIL = "Email is not correct!, Try again";
@@ -32,4 +32,9 @@ const String kERROR_TOO_MANY_REQUESTS = "Sign in disabled due to too many reques
 const String kERROR_OPERATION_NOT_ALLOWED = "Operation not allowed!, Please enable it in the firebase console";
 const String kERROR_UNKNOWN = "Unknown error";
 
+const String kERROR_EMAIL_EMAIL_ALREADY_IN_USE = "The email address is already in use by another account";
+
 const kAnimationDuration = Duration(milliseconds: 200);
+
+//firebase error code
+const String kFIREBASE_AUTH_EMAIL_ALREADY_IN_USE = "[firebase_auth/email-already-in-use] The email address is already in use by another account.";

@@ -4,10 +4,6 @@ import 'package:WBM_platform/src/screens/sign_up_screen/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 
 class NoAccoutText extends StatelessWidget {
-  const NoAccoutText({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Row(
