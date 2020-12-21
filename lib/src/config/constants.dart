@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 const kPrimaryColor = Color(0xFF0568A6);
 const kPrimaryLightColor = Color(0xFFFFECDF);
-const kSecondaryColor = Color(0xFF75A3BF);
+const kSecondaryColor = Color(0xFFBF7950);
 const kTextColor = Color(0xFF757575);
 
 final headingStyle = TextStyle(
