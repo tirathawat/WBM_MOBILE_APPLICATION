@@ -7,16 +7,17 @@ import 'package:flutter/material.dart';
 import 'constants.dart';
 
 class App extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'WBM_platform',
-      theme: _buildThemeData(),
-      initialRoute: FirebaseAuth.instance.currentUser == null ? StartScreen.routeName : HomeScreen.routeName,
-      routes: routes,
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'WBM_platform',
+        theme: _buildThemeData(),
+        initialRoute: FirebaseAuth.instance.currentUser == null
+            ? StartScreen.routeName
+            : HomeScreen.routeName,
+        routes: routes,
+      );
   }
 
   ThemeData _buildThemeData() {
@@ -31,24 +32,12 @@ class App extends StatelessWidget {
     );
   }
 
-  InputDecorationTheme _buildInputDecorationTheme() {
-    var outlineInputBorder = OutlineInputBorder(
-      borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide(
-        color: kTextColor,
-      ),
-      gapPadding: 10,
-    );
-    return InputDecorationTheme(
-      contentPadding: EdgeInsets.symmetric(
-        horizontal: 42,
-        vertical: 20,
-      ),
-      enabledBorder: outlineInputBorder,
-      focusedBorder: outlineInputBorder,
-      border: outlineInputBorder,
-    );
-  }
+  InputDecorationTheme _buildInputDecorationTheme() => InputDecorationTheme(
+        contentPadding: EdgeInsets.symmetric(
+          horizontal: 42,
+          vertical: 20,
+        ),
+      );
 
   TextTheme _buildTextTheme() => TextTheme(
         bodyText1: TextStyle(color: kTextColor),

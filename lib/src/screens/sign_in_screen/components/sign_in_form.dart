@@ -61,10 +61,21 @@ class _SignInFormState extends State<SignInForm> {
     );
   }
 
+  var outlineInputBorder = OutlineInputBorder(
+    borderRadius: BorderRadius.circular(15),
+    borderSide: BorderSide(
+      color: kTextColor,
+    ),
+    gapPadding: 10,
+  );
+
   TextFormField _buildEmailFormField() => TextFormField(
         controller: _emailController,
         keyboardType: TextInputType.emailAddress,
         decoration: InputDecoration(
+          enabledBorder: outlineInputBorder,
+          focusedBorder: outlineInputBorder,
+          border: outlineInputBorder,
           floatingLabelBehavior: FloatingLabelBehavior.always,
           labelText: "Email",
           hintText: "Enter your email",
@@ -86,6 +97,9 @@ class _SignInFormState extends State<SignInForm> {
         controller: _passwordController,
         obscureText: true,
         decoration: InputDecoration(
+          enabledBorder: outlineInputBorder,
+          focusedBorder: outlineInputBorder,
+          border: outlineInputBorder,
           floatingLabelBehavior: FloatingLabelBehavior.always,
           labelText: "Password",
           hintText: "Enter your password",

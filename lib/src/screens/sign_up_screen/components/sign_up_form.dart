@@ -97,10 +97,21 @@ class _SignUpFormState extends State<SignUpForm> {
     );
   }
 
+  var outlineInputBorder = OutlineInputBorder(
+    borderRadius: BorderRadius.circular(15),
+    borderSide: BorderSide(
+      color: kTextColor,
+    ),
+    gapPadding: 10,
+  );
+
   TextFormField _buildFirstNameFormField() => TextFormField(
         controller: _firstNameController,
         keyboardType: TextInputType.name,
         decoration: InputDecoration(
+          enabledBorder: outlineInputBorder,
+          focusedBorder: outlineInputBorder,
+          border: outlineInputBorder,
           floatingLabelBehavior: FloatingLabelBehavior.always,
           labelText: "First name",
           hintText: "Enter your first name",
@@ -120,6 +131,9 @@ class _SignUpFormState extends State<SignUpForm> {
         controller: _lastNameController,
         keyboardType: TextInputType.name,
         decoration: InputDecoration(
+          enabledBorder: outlineInputBorder,
+          focusedBorder: outlineInputBorder,
+          border: outlineInputBorder,
           floatingLabelBehavior: FloatingLabelBehavior.always,
           labelText: "Last name",
           hintText: "Enter your last name",
@@ -139,6 +153,9 @@ class _SignUpFormState extends State<SignUpForm> {
         controller: _phoneNumberController,
         keyboardType: TextInputType.phone,
         decoration: InputDecoration(
+          enabledBorder: outlineInputBorder,
+          focusedBorder: outlineInputBorder,
+          border: outlineInputBorder,
           floatingLabelBehavior: FloatingLabelBehavior.always,
           labelText: "Phone number",
           hintText: "Enter your phone number",
@@ -158,6 +175,9 @@ class _SignUpFormState extends State<SignUpForm> {
         controller: _emailController,
         keyboardType: TextInputType.emailAddress,
         decoration: InputDecoration(
+          enabledBorder: outlineInputBorder,
+          focusedBorder: outlineInputBorder,
+          border: outlineInputBorder,
           floatingLabelBehavior: FloatingLabelBehavior.always,
           labelText: "Email",
           hintText: "Enter your email",
@@ -179,6 +199,9 @@ class _SignUpFormState extends State<SignUpForm> {
         controller: _passwordController,
         obscureText: true,
         decoration: InputDecoration(
+          enabledBorder: outlineInputBorder,
+          focusedBorder: outlineInputBorder,
+          border: outlineInputBorder,
           floatingLabelBehavior: FloatingLabelBehavior.always,
           labelText: "Password",
           hintText: "Enter your password",
@@ -200,6 +223,9 @@ class _SignUpFormState extends State<SignUpForm> {
         controller: _confirmPasswordController,
         obscureText: true,
         decoration: InputDecoration(
+          enabledBorder: outlineInputBorder,
+          focusedBorder: outlineInputBorder,
+          border: outlineInputBorder,
           floatingLabelBehavior: FloatingLabelBehavior.always,
           labelText: "Confirm Password",
           hintText: "Enter your password",
