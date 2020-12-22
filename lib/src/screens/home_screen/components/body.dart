@@ -5,12 +5,15 @@ import 'package:flutter/material.dart';
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return FlatButton(
-      color: Colors.white,
-        onPressed: () {
-          FirebaseAuth.instance.signOut();
-          Navigator.pushNamedAndRemoveUntil(context, StartScreen.routeName, (route) => false);
-        },
-        child: Text("sign out"));
+    return SafeArea(
+      child: FlatButton(
+          color: Colors.white,
+          onPressed: () {
+            FirebaseAuth.instance.signOut();
+            Navigator.pushNamedAndRemoveUntil(
+                context, StartScreen.routeName, (route) => false);
+          },
+          child: Text("sign out")),
+    );
   }
 }
