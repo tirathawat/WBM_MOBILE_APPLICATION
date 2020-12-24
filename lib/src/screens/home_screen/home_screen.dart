@@ -1,6 +1,8 @@
 import 'package:WBM_platform/src/config/constants.dart';
+import 'package:WBM_platform/src/config/size_config.dart';
 import 'package:WBM_platform/src/screens/chat_screen/chat_screen.dart';
 import 'package:WBM_platform/src/screens/home_screen/components/body.dart';
+import 'package:WBM_platform/src/screens/profile_screen/profile_screen.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -23,9 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
     Container(
       color: Colors.white,
     ),
-    Container(
-      color: Colors.white,
-    ),
+    ProfileScreen(),
   ];
 
   @override
@@ -40,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.transparent,
         items: [
           Icon(
-            Icons.info,
+            Icons.home,
             color: Colors.white,
           ),
           Icon(
@@ -52,11 +52,11 @@ class _HomeScreenState extends State<HomeScreen> {
             color: Colors.white,
           ),
           Icon(
-            Icons.dashboard,
+            Icons.bar_chart,
             color: Colors.white,
           ),
           Icon(
-            Icons.settings,
+            Icons.account_box,
             color: Colors.white,
           ),
         ],
